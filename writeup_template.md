@@ -22,7 +22,7 @@ The goals / steps of this project are the following:
 [image2]: ./examples/track1.jpg "Track1 Image"
 [image3]: ./examples/center.jpg "Center Image"
 [image4]: ./examples/left.jpg "Left Image"
-[image5]: ./examples/right "Right Image"
+[image5]: ./examples/right.jpg "Right Image"
 [image6]: ./examples/placeholder_small.png "Normal Image"
 [image7]: ./examples/placeholder_small.png "Flipped Image"
 
