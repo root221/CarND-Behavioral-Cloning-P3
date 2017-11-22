@@ -19,7 +19,7 @@ The goals / steps of this project are the following:
 [//]: # (Image References)
 
 [image1]: ./examples/placeholder.png "Model Visualization"
-[image2]: ./examples/track1.jpg "Center Image"
+[image2]: ./examples/track1.jpg "Track1 Image"
 [image3]: ./examples/center.jpg "Center Image"
 [image4]: ./examples/left.jpg "Left Image"
 [image5]: ./examples/right "Right Image"
