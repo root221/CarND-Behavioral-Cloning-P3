@@ -19,7 +19,7 @@ The goals / steps of this project are the following:
 [//]: # (Image References)
 
 [image1]: ./examples/placeholder.png "Model Visualization"
-[image2]: ./examples/center.jpg 
+[image2]: ./examples/center.jpg "Center Image"
 [image3]: ./examples/placeholder_small.png "Recovery Image"
 [image4]: ./examples/placeholder_small.png "Recovery Image"
 [image5]: ./examples/placeholder_small.png "Recovery Image"
@@ -75,8 +75,6 @@ For details about how I created the training data, see the next section.
 ###Model Architecture and Training Strategy
 
 ####1. Solution Design Approach
-
-The overall strategy for deriving a model architecture was to try 
 
 My first step was to use a fully connected neural network, it drove poorly. Then I tried to use Lenet, I thought this model might be appropriate because convolution neural network worked pretty good at images.
 
