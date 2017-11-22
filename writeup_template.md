@@ -78,23 +78,16 @@ For details about how I created the training data, see the next section.
 
 My first step was to use a fully connected neural network, it drove poorly. Then I tried to use Lenet, I thought this model might be appropriate because convolution neural network worked pretty good at images.
 
-In order to gauge how well the model was working, I split my image and steering angle data into a training and validation set. I found that my first model had a low mean squared error on the training set but a high mean squared error on the validation set. This implied that the model was overfitting. 
+In order to gauge how well the model was working, I run the simulator to see how well the car was driving around track one. The second  model drove much better than my first neural netwok, but still not good enough.
 
-To combat the overfitting, I modified the model so that ...
-
-Then I ... 
-
-The final step was to run the simulator to see how well the car was driving around track one. There were a few spots where the vehicle fell off the track... to improve the driving behavior in these cases, I ....
+Then, I tried a more powerful mode. The model drove pretty well, but there were a few spots where the vehicle fell off the track, in order to improve the driving behavior in these cases, I added the images took from the left and right camera.
 
 At the end of the process, the vehicle is able to drive autonomously around the track without leaving the road.
 
 ####2. Final Model Architecture
 
-The final model architecture (model.py lines 18-24) consisted of a convolution neural network with the following layers and layer sizes ...
+The final model architecture (the last cell) consisted of a few convolution neural network follow by a few fully connected layer. 
 
-Here is a visualization of the architecture (note: visualizing the architecture is optional according to the project rubric)
-
-![alt text][image1]
 
 ####3. Creation of the Training Set & Training Process
 
@@ -102,24 +95,24 @@ To capture good driving behavior, I first recorded one laps on track one using c
 
 ![alt text][image2]
 
-I also used the right and left camera so that the vehicle could learn to recover from the left side and right sides of the road back to center. 
-These images show what a recovery looks like starting from ... :
+I also used the right and left camera so that the vehicle could learn to recover from the left side and right sides of the road back to center. The three images below were taken from the following camera: center camera, left camera and right camera
 
 ![alt text][image3]
 ![alt text][image4]
 ![alt text][image5]
 
+I also drove around the first track in both a clock-wise and counter-clockwise direction to prevent the data be biased towards left turns.
 
-To augment the data sat, I also flipped images and angles thinking that this would ... For example, here is an image that has then been flipped:
+To augment the data sat, I also flipped images thinking that this would help, but the result was not good. For example, here is an image that has then been flipped:
 
 ![alt text][image6]
 ![alt text][image7]
 
 
 
-After the collection process, I had X number of data points. I then preprocessed this data by ...
+After the collection process, I had 7434 number of data points. I preprocessed this data by cropping images to get rid of the elements that might be distracting for the model,then I normalized the data.
 
 
-I finally randomly shuffled the data set and put Y% of the data into a validation set. 
+I finally randomly shuffled the data set and put 20% of the data into a validation set. 
 
-I used this training data for training the model. The validation set helped determine if the model was over or under fitting. The ideal number of epochs was Z as evidenced by ... I used an adam optimizer so that manually training the learning rate wasn't necessary.
+I used this training data for training the model. The validation set helped determine if the model was over or under fitting. The ideal number of epochs was Z as evidenced by the . I used an adam optimizer so that manually training the learning rate wasn't necessary.
