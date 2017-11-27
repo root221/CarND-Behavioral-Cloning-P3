@@ -18,7 +18,7 @@ The goals / steps of this project are the following:
 
 [//]: # (Image References)
 
-[image1]: ./examples/placeholder.png "Model Visualization"
+[image1]: ./examples/model.jpg "Model Visualization"
 [image2]: ./examples/track1.jpg "Track1 Image"
 [image3]: ./examples/center.jpg "Center Image"
 [image4]: ./examples/left.jpg "Left Image"
@@ -89,7 +89,9 @@ At the end of the process, the vehicle is able to drive autonomously around the 
 ####2. Final Model Architecture
 
 The final model architecture (the last cell) consisted of a few convolution neural network follow by a few fully connected layer. 
+Here is the detail of the architecture
 
+![alt text][image1]
 
 ####3. Creation of the Training Set & Training Process
 
