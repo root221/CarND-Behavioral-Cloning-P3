@@ -113,5 +113,4 @@ python video.py run1 --fps 48
 Will run the video at 48 FPS. The default FPS is 60.
 
 ## Result Video
-https://www.youtube.com/watch?v=cN1gHbe5bco
 [![result](https://img.youtube.com/vi/cN1gHbe5bco/0.jpg)](https://www.youtube.com/watch?v=cN1gHbe5bco)
